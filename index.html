@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>perro que perrea</title>
+	<style>
+		.cajon{
+			position: absolute;
+			top: 100px;
+			left: 100px;
+            width: 1600px;
+            height: 800px;
+            background-color: yellow;
+
+		}
+		.pelotica{
+			position: absolute;
+			top: 355px;
+			left: 800px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+		}
+	</style>
+</head>
+<body>
+	<audio src="NASHE.mp3" id="NASHE"></audio>
+	<div class="cajon" id="caj"></div>
+	<div class="pelotica" id="pel" onclick="lol()"></div>
+<script>
+	x=0;
+	y=0;
+	function lol(){
+		NASHE.play();
+		x=Math.floor((Math.random() * (1600-100))+100);
+		y=Math.floor((Math.random() * (700-100))+100);
+		pel.style.left=x+"px";
+		pel.style.top=y+"px";
+
+	}
+
+</script>
+</body>
+</html>
